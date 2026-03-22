@@ -9,19 +9,19 @@
 
 	<ItemGroup>
 		<Reference Include="canjewelry">
-			<HintPath>..\..\Other Mod's DLLs for Integration Purposes\CANJewelry\canjewelry.dll</HintPath>
+			<HintPath>..\..\..\vshelper\dependencies\canjewelry.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="ItemRarity">
-			<HintPath>..\..\Other Mod's DLLs for Integration Purposes\ItemRarity\ItemRarity.dll</HintPath>
+			<HintPath>..\..\..\vshelper\dependencies\ItemRarity.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="ScientificSmithy">
-			<HintPath>..\..\Other Mod's DLLs for Integration Purposes\ScientificSmithy\ScientificSmithy.dll</HintPath>
+			<HintPath>..\..\..\vshelper\dependencies\ScientificSmithy.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 		<Reference Include="SmithingPlus">
-			<HintPath>..\..\Other Mod's DLLs for Integration Purposes\SmithingPlus\SmithingPlus.dll</HintPath>
+			<HintPath>..\..\..\vshelper\dependencies\SmithingPlus.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
 		<Reference Include="VintagestoryAPI">
