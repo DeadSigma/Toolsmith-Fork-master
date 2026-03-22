@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Vintagestory.API.Datastructures;
+
+namespace Toolsmith.Utils {
+    public static class ToolsmithConstants {
+        public const string SmithWithBitsEnabled = "Toolsmith_SmithWithBits";
+        public const string DisabledMultiPartRenders = "Toolsmith_MultiPartRendering";
+
+        public const string FallbackHeadCode = "game:candle";
+        public const string DefaultHandleCode = "game:stick";
+        public const string BoneHandleCode = "game:bone";
+        public const string DefaultGripTag = "plain";
+        public const string DefaultTreatmentTag = "none";
+        public const string ToolBundleCode = "toolsmith:tinkertoolparts";
+        public const string HandleBlankCode = "supportbeam"; //As in, the 'blank' that is crafted into a handle! If that recipe of Knife + this changes, make sure to change this!
+        public const string SandpaperCode = "toolsmith:sandpaper";
+        public const string FirewoodCode = "game:firewood";
+        public const string WorkItemCode = "game:workitem";
+        public const string IngotCode = "game:ingot";
+        public const string HandleWoodTexturePathMinusType = "toolsmith:block/tools/tool";
+        public const string DebarkedWoodBackupPathMinusType = "game:block/wood/debarked/";
+        public const string DefaultGripFallbackTexture = "game:block/cloth/reedrope";
+        public const string LightTreatementOverlayPath = "toolsmith:block/overlays/lighter";
+        public const string DarkTreatementOverlayPath = "toolsmith:block/overlays/darker";
+
+        public const float TimeToCraftTinkerTool = 2.5f;
+        public const float StartingSharpnessMult = 0.85f;
+        public const float NonMetalStartingSharpnessMult = 0.66f;
+        public const float HighSharpnessSpeedBonusMult = 0.05f;
+        public const float LowSharpnessSpeedMalusMult = -0.1f;
+        public const float SharpenInterval = 0.4f;
+        public const float DoNotSharpenBelowPercent = 0.01f;
+        public const int NumBitsReturnMinimum = 2;
+        public const float StickAndBoneFailurePercent = 0.25f;
+        public const float OtherHandleFailurePercent = 0.05f;
+        public const int NumHammerStrikesForWorkbenchCraftAction = 3;
+
+        public const string ModularPartRenderingFromAttributesMeshRefs = "ToolsmithModularPartRenderingMeshRefs";
+        public const string WorkbenchItemRenderingMeshRefs = "ToolsmithWorkbenchItemRenderingMeshRefs";
+        public const string WorkbenchSlotShapesCache = "workbenchSlotMarkerTextures";
+        public const string WorkbenchSlotMarkerShapePath = "toolsmith:shapes/block/workbench-slotmarker";
+        public const string WorkbenchSlotMarkerEmptyPath = "toolsmith:block/workbenchslots/empty-slot";
+        public const string WorkbenchSlotMarkerHeadPath = "toolsmith:block/workbenchslots/toolhead-slot";
+        public const string WorkbenchSlotMarkerHandlePath = "toolsmith:block/workbenchslots/toolhandle-slot";
+        public const string WorkbenchSlotMarkerBindingPath = "toolsmith:block/workbenchslots/toolbinding-slot";
+
+        public const string ToolsmithConfigKey = "ToolsmithConfigs";
+        public const string ToolsmithStatsKey = "ToolsmithPartStats";
+        public const string ToolsmithWoodInToolBindingsData = "ToolsmithWoodInBindingsList";
+
+        public static TagSet ToolsmithHeadItemTag;
+        public static TagSet ToolsmithHandleItemTag;
+        public static TagSet ToolsmithBindingItemTag;
+        public static TagSet ToolsmithPartItemTag;
+        public static TagSet ToolsmithMaintenanceItemTag;
+
+        public static TagSet ToolsmithBindingBlockTag;
+        public static TagSet ToolsmithPartBlockTag;
+
+        //The keys for accessing the default part entries themselves, to recieve their stat key blocks
+        public const string DefaultHandlePartKey = "stick";
+        public const string DefaultBindingPartKey = "none";
+
+        //The keys for accessing the default stat blocks for the different parts
+        public const string DefaultBindingStatKey = "none";
+    }
+}
