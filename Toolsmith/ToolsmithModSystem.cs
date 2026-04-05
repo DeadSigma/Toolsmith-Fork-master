@@ -108,28 +108,28 @@ namespace Toolsmith {
             }
 
             //Tool Tinkering general Behaviors
-            api.RegisterCollectibleBehaviorClass($"{ModId}:TinkeredTools", typeof(CollectibleBehaviorTinkeredTools));
-            api.RegisterCollectibleBehaviorClass($"{ModId}:ToolPartWithHealth", typeof(CollectibleBehaviorToolPartWithHealth));
-            api.RegisterCollectibleBehaviorClass($"{ModId}:ToolLowDamageWithUse", typeof(CollectibleBehaviorToolBlunt));
-            api.RegisterCollectibleBehaviorClass($"{ModId}:SmithedTool", typeof(CollectibleBehaviorSmithedTools));
-            api.RegisterCollectibleBehaviorClass($"{ModId}:ToolHead", typeof(CollectibleBehaviorToolHead));
-            api.RegisterCollectibleBehaviorClass($"{ModId}:ToolHandle", typeof(CollectibleBehaviorToolHandle));
-            api.RegisterCollectibleBehaviorClass($"{ModId}:ToolBinding", typeof(CollectibleBehaviorToolBinding));
+            api.RegisterCollectibleBehaviorClass("toolsmith:TinkeredTools", typeof(CollectibleBehaviorTinkeredTools));
+            api.RegisterCollectibleBehaviorClass("toolsmith:ToolPartWithHealth", typeof(CollectibleBehaviorToolPartWithHealth));
+            api.RegisterCollectibleBehaviorClass("toolsmith:ToolLowDamageWithUse", typeof(CollectibleBehaviorToolBlunt));
+            api.RegisterCollectibleBehaviorClass("toolsmith:SmithedTool", typeof(CollectibleBehaviorSmithedTools));
+            api.RegisterCollectibleBehaviorClass("toolsmith:ToolHead", typeof(CollectibleBehaviorToolHead));
+            api.RegisterCollectibleBehaviorClass("toolsmith:ToolHandle", typeof(CollectibleBehaviorToolHandle));
+            api.RegisterCollectibleBehaviorClass("toolsmith:ToolBinding", typeof(CollectibleBehaviorToolBinding));
 
             //Utility Behaviors
-            api.RegisterCollectibleBehaviorClass($"{ModId}:OffhandDominantInteraction", typeof(CollectibleBehaviorOffhandDominantInteraction));
+            api.RegisterCollectibleBehaviorClass("toolsmith:OffhandDominantInteraction", typeof(CollectibleBehaviorOffhandDominantInteraction));
 
             //Rendering-Based Behaviors
-            api.RegisterCollectibleBehaviorClass($"{ModId}:ModularPartRenderingFromAttributes", typeof(ModularPartRenderingFromAttributes));
+            api.RegisterCollectibleBehaviorClass("toolsmith:ModularPartRenderingFromAttributes", typeof(ModularPartRenderingFromAttributes));
 
             //Blocks and Items registry
-            api.RegisterBlockEntityClass($"{ModId}:EntityGrindstone", typeof(BlockEntityGrindstone));
-            api.RegisterBlockEntityClass($"{ModId}:EntityWorkbench", typeof(BlockEntityWorkbench));
-            api.RegisterBlockClass($"{ModId}:BlockGrindstone", typeof(BlockGrindstone));
-            api.RegisterBlockClass($"{ModId}:BlockWorkbench", typeof(BlockWorkbench));
-            api.RegisterItemClass($"{ModId}:ItemWhetstone", typeof(ItemWhetstone));
-            api.RegisterItemClass($"{ModId}:ItemTinkerToolParts", typeof(ItemTinkerToolParts));
-            api.RegisterItemClass($"{ModId}:WorkableBits", typeof(ItemWorkableNugget));
+            api.RegisterBlockEntityClass("toolsmith:EntityGrindstone", typeof(BlockEntityGrindstone));
+            api.RegisterBlockEntityClass("toolsmith:EntityWorkbench", typeof(BlockEntityWorkbench));
+            api.RegisterBlockClass("toolsmith:BlockGrindstone", typeof(BlockGrindstone));
+            api.RegisterBlockClass("toolsmith:BlockWorkbench", typeof(BlockWorkbench));
+            api.RegisterItemClass("toolsmith:ItemWhetstone", typeof(ItemWhetstone));
+            api.RegisterItemClass("toolsmith:ItemTinkerToolParts", typeof(ItemTinkerToolParts));
+            api.RegisterItemClass("toolsmith:WorkableBits", typeof(ItemWorkableNugget));
 
             HarmonyPatch();
         }

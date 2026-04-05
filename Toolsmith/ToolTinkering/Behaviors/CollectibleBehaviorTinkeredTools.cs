@@ -306,10 +306,13 @@ namespace Toolsmith.ToolTinkering.Behaviors {
             }
         }
 
-        private void HandleExtraModCompat(ItemSlot[] allInputslots, ItemSlot outputSlot) {
-            if (ToolsmithModSystem.Api.ModLoader.IsModEnabled("xskills")) { //Copy over the Quality Attribute (if it exists) onto the output item so that the GetMaxDurability will account for it here!
+        private void HandleExtraModCompat(ItemSlot[] allInputslots, ItemSlot outputSlot)
+        {
+            if (ToolsmithModSystem.Api.ModLoader.IsModEnabled("xskills") || ToolsmithModSystem.Api.ModLoader.IsModEnabled("xskillsfork"))
+            {
                 HandleXSkillsCompat(allInputslots, outputSlot);
             }
+
 
             if (ToolsmithModSystem.Api.ModLoader.IsModEnabled("itemrarity")) {
                 HandleItemRarityCompat(allInputslots, outputSlot);
