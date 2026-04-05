@@ -62,7 +62,7 @@ namespace Toolsmith {
         public override void StartPre(ICoreAPI api) {
             api.CollectibleTagRegistry.Register(["toolsmith-part", "toolsmith-maintenance", "toolsmith-binding", "toolsmith-handle", "toolsmith-head"]);
             Logger = Mod.Logger;
-            ModId = Mod.Info.ModID;
+            ModId = "toolsmith";
             ModVersion = Mod.Info.Version;
             if (api as ICoreServerAPI != null) {
                 Sapi = api as ICoreServerAPI;

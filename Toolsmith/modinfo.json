@@ -1,6 +1,6 @@
 {
     "type": "code",
-    "modid": "toolsmith",
+    "modid": "toolsmithfork",
     "name": "Toolsmith Fork",
     "authors": [ "Jon", " El_Neuman" ],
     "description": "Upgrade your tools with proper handles and bindings for durability and other buffs! Plus, returning the tool head when it wears out since they should last much longer then they do in vanilla.",
